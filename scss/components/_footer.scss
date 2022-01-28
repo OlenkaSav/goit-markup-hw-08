@@ -1,0 +1,98 @@
+.footer {
+  background-color: getColor(section-backgroun-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__logo--style {
+    color: getColor(text-white-accent-color);
+  }
+  &__address {
+    display: block;
+    font-style: normal;
+    color: getColor(text-white-accent-color);
+    line-height: 1.71;
+
+    text-decoration: none;
+    margin-bottom: 9px;
+    transition: $transitionColor;
+  }
+  &__address--email,
+  &__address--tel {
+    color: getColor(footer-email-tel-color);
+  }
+  &__address--tel {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  &__address:hover,
+  &__address:focus {
+    color: getColor(accent-color);
+  }
+  &__join {
+    margin-left: 70px;
+  }
+  &__title {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: getColor(text-white-accent-color);
+    margin-bottom: 20px;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 206px;
+    height: 44px;
+  }
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: $transitionBg;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: getColor(accent-color);
+  }
+  &__icon {
+    height: 20px;
+    width: 20px;
+    fill: getColor(text-white-accent-color);
+  }
+  &__input {
+    margin-left: auto;
+  }
+  &__input-field {
+    display: flex;
+  }
+  &__email {
+    display: block;
+    width: 358px;
+    height: 50px;
+    background-color: getColor(footer-input-bg);
+    border-color: getColor(footer-input-border);
+    border-radius: 4px;
+    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+  }
+  &__email::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

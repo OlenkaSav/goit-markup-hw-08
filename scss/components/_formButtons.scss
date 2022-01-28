@@ -1,0 +1,35 @@
+.form__button {
+  display: block;
+  margin: 30px auto 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: inherit;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: auto;
+  opacity: 1;
+  transition: $transitionOpasity 1000ms;
+}
+.modal__icon-close {
+  transition: $transitionFill;
+}
+.backdrop.is-hidden .modal__button-close {
+  opacity: 0;
+}
+.modal__button-close:hover .modal__icon-close,
+.modal__button-close:focus .modal__icon-close {
+  fill: getColor(accent-color);
+}

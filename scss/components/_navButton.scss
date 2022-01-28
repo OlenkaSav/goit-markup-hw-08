@@ -1,0 +1,32 @@
+.menu-toggle {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header__icon--close {
+  display: none;
+}
+.menu-toggle.is-open .header__icon--close {
+  display: block;
+}
+.menu-toggle.is-open .header__icon--menu {
+  display: none;
+}
+.js-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: getColor(accent-color);
+  padding: 48px 0 48px 40px;
+  margin: 0;
+  font-weight: 500;
+  transform: translateX(100%);
+}
+.js-menu-container.is-open {
+  transform: translateX(0);
+}

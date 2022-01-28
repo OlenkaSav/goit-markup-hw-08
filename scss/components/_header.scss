@@ -1,0 +1,116 @@
+.header {
+  position: relative;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: getColor(line-color);
+
+  &__logo {
+    padding-top: 24px;
+    margin-right: 93px;
+  }
+  &__logo--style {
+    color: getColor(studio-stile-color);
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__main-nav,
+  &__page-nav {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: getColor(title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: $transitionColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor(accent-color);
+  }
+  &__contact {
+    display: flex;
+    margin-left: auto;
+  }
+  &__email {
+    margin-right: 50px;
+  }
+  &__email,
+  &__tel {
+    color: getColor(primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: $transitionColor;
+  }
+  &__email:hover,
+  &__email:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: getColor(accent-color);
+  }
+  &__email:hover &__icon-email,
+  &__email:focus &__icon-email,
+  &__tel:hover &__icon-phone,
+  &__tel:focus &__icon-phone {
+    fill: getColor(accent-color);
+  }
+  &__tel,
+  &__email {
+    display: flex;
+  }
+
+  &__icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: getColor(primary-text-color);
+    align-self: baseline;
+
+    transition: $transitionColor;
+  }
+  &__icon-email {
+    width: 16px;
+    height: 12px;
+
+    margin-right: 10px;
+    fill: getColor(primary-text-color);
+    align-self: baseline;
+
+    transition: $transitionColor;
+  }
+  &__link--current {
+    position: relative;
+    color: getColor(accent-color);
+  }
+  &__link--current::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: rgba(33, 150, 243, 1);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+  }
+}
