@@ -207,10 +207,11 @@ body {
 }
 
 .menu-toggle {
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   margin: 0;
   padding: 0;
-  border: none;
   background-color: transparent;
 }
 
@@ -226,7 +227,7 @@ body {
   display: none;
 }
 
-.js-menu-container {
+.menu-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -239,7 +240,7 @@ body {
   transform: translateX(100%);
 }
 
-.js-menu-container.is-open {
+.menu-container.is-open {
   transform: translateX(0);
 }
 
