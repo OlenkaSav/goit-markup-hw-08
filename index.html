@@ -16,13 +16,45 @@
             <nav class="header__main-nav">
                 <a class="logo header__logo" href="index.html">Web<span class="header__logo--style">Studio</span></a>
                <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-                   <svg width=40px height=40px aria-label="Переключатель мобильного меню">
-                        <use class="header__icon--menu" href="images/icons.svg#icon-menu"></use>
-                        <use class="header__icon--close" href="images/icons.svg#icon-menu-close"></use>
+                   <svg class="menu-toggle__icon" width=40px height=40px aria-label="Переключатель мобильного меню">
+                        <use  href="images/icons.svg#icon-menu"></use>
                 </svg>
                </button>
                <div class="menu-container js-menu-container" id="mobile-menu">
                     <button class="menu-toggle js-close-menu" type="button" aria-expanded="false" aria-controls="menu-field">
+                        <svg class="menu-toggle__icon" width=40px height=40px aria-label="Переключатель мобильного меню">
+                            <use  href="images/icons.svg#icon-menu-close"></use>
+                            </svg>
+                    </button>
+                    <ul class="menu-container__page-nav">
+                        <li class="menu-container__item">
+                            <a class="menu-container__link menu-container__link--current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="menu-container__item">
+                            <a class="menu-container__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="menu-container__item">
+                            <a class="menu-container__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-container__contacts">
+                        <li class="menu-container__contact"></li>
+                            <a class="menu-container__tel" href="tel:+380961111111">
+                                 +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="menu-container__contact"></li>
+                            <a class="menu-container__email" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu-container__social social">
+                        <li class="social__item"><a class="social__link" href="">Instagram</a></li>
+                        <li class="social__item"><a class="social__link" href="">Twitter</a></li>
+                        <li class="social__item"><a class="social__link" href="">Facebook</a></li>
+                        <li class="social__item"><a class="social__link" href="">LinkedIn</a></li>
+                    </ul>
                </div>
                 <ul class="header__page-nav">
                     <li class="header__item">
@@ -72,7 +104,7 @@
     
     <!-- Our preferences -->
     <section class="section preferences">
-       <div class="container ">
+       <div class="container preferences__container ">
             <h2 class="section__title visually-hidden">Наши преимущества</h2>
             <ul class="preferences__list">
                 <li class="preferences__item">
@@ -138,7 +170,7 @@
 
     <!-- Our team section -->
     <section class="section team">
-        <div class="container">
+        <div class="container team__container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__list">
                 <li  class="team__card">
@@ -239,7 +271,7 @@
     </main>
     <!-- Regular clients -->
     <section class="section clients ">
-        <div class="container">
+        <div class="container clients__container">
             <h2 class="section__title">Постоянные клиенты</h2>
             <ul class="clients__list">
                 <li class="clients__item"> 
@@ -291,9 +323,10 @@
     <!-- Footer section -->
     <footer class="footer" >
        <div class="container footer__container">
-           <div>
+         <div class="footer__tablet-pos">
+            <div>
                 <a class="logo footer__logo" href="index.html">Web<span class="footer__logo--style">Studio</span></a>
-                
+            
                 <address class="footer__addresses">
                     <ul class="footer__contacts">
                         <li>
@@ -310,9 +343,9 @@
                     </ul>
                 </address>
             
-           </div>
-           <div class="footer__join">
-               <strong class="footer__title">Присоединяйтесь</strong>
+            </div>
+            <div class="footer__join">
+                <strong class="footer__title">Присоединяйтесь</strong>
                 <ul class="footer__links">
                     <li><a class="footer__link" href="">
                             <svg class="footer__icon" width=44px height=44px>
@@ -329,7 +362,8 @@
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg></a></li>
                 </ul>
-           </div>
+            </div>
+         </div>
             <form class="footer__input">
                 <b class="footer__title">Подпишитесь на рассылку</b>
                 <div class="footer__input-field">
@@ -404,7 +438,6 @@
     </div>
 
 <script src="./js/modal.js"></script>
-<script src="js/mobile-menu.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>

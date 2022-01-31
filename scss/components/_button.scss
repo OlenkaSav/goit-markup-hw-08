@@ -28,7 +28,10 @@
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: 15px;
-}
-.footer__subscribe {
-  margin-left: 10px;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+  .footer__subscribe {
+    margin-left: 10px;
+  }
 }

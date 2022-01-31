@@ -30,4 +30,20 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  @media screen and (max-width: 1199px) {
+    & {
+      padding: 118px 0;
+    }
+
+    &__overlay {
+      height: 400px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: (42 / 26);
+      width: 360px;
+      margin-bottom: 30px;
+    }
+  }
 }

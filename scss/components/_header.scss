@@ -7,19 +7,35 @@
   &__logo {
     padding-top: 24px;
     margin-right: 93px;
+    @media screen and (max-width: 767px) {
+      padding: 16px 0;
+      margin: 0;
+    }
   }
   &__logo--style {
     color: getColor(studio-stile-color);
   }
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
-  &__main-nav,
+  &__main-nav {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
   &__page-nav {
-    display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__item:not(:last-child) {
@@ -43,11 +59,25 @@
     color: getColor(accent-color);
   }
   &__contact {
-    display: flex;
-    margin-left: auto;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: auto;
+    }
   }
   &__email {
-    margin-right: 50px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
   }
   &__email,
   &__tel {
@@ -57,8 +87,10 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     transition: $transitionColor;
   }
