@@ -217,7 +217,8 @@ body.modal-open {
 .header__email, .header__tel {
   color: #757575;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -225,6 +226,8 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .header__email, .header__tel {
+    line-height: 1.14;
+    font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -405,13 +408,46 @@ body.modal-open {
 }
 
 .hero__overlay {
-  max-width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 400px;
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tab.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-desk.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-desk@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -444,6 +480,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .hero__title {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .preferences {
     padding-bottom: 60px;
@@ -464,13 +506,13 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .preferences__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .preferences__item {
-    flex-basis: calc((100% - 30px * 4) / 4);
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
 }
 
@@ -869,7 +911,7 @@ body.modal-open {
 
 .footer__email {
   display: block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: rgba(33, 150, 243, 0);
   border-color: rgba(255, 255, 255, 0.3);
@@ -882,6 +924,18 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .footer__email {
     margin: 0 auto 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__email {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 479px) {
+  .footer__email {
+    width: 450px;
   }
 }
 
@@ -901,7 +955,7 @@ body.modal-open {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 0 15px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
   opacity: 1;
@@ -909,34 +963,20 @@ body.modal-open {
 }
 
 .modal {
+  position: absolute;
   width: 450px;
   height: 609px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   background-color: white;
-  transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 420px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .modal {
+    width: 90%;
     max-width: 450px;
-  }
-  .backdrop {
-    display: flex;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    position: absolute;
-    width: 450px;
-    height: 609px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5);
   }
 }
 
@@ -945,9 +985,10 @@ body.modal-open {
     width: 528px;
     height: 581px;
   }
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5);
-  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .form {

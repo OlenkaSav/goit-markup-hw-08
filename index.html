@@ -93,13 +93,14 @@
     </header>
 
     <main>
-        <!-- Hero section -->
+        <!-- Hero section-->
         <section class="hero hero__overlay">
-            <div class="container">
+            <div class="container"> 
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button hero__button" data-modal-open> Заказать услугу </button>
+                
             </div>
-        </section>
+        </section> 
 
     
     <!-- Our preferences -->
@@ -153,15 +154,30 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="doing__list">
             <li class="doing__thumb">
-                <img class="doing__pic" src="./images/box1.jpg" alt="работа за компьютером" width="370">
+                <img class="doing__pic" 
+                srcset="
+                ./images/doing/box1.jpg 1x,
+                ./images/doing/box1@2x.jpg 2x
+                "
+                src="./images/doing/box1.jpg" alt="десктопные приложения" width="370">
                 <p class="doing__lable">Десктопные приложения</p>
             </li>
             <li class="doing__thumb">
-                <img class="doing__pic" src="./images/box2.jpg" alt="работа с приложениями" width="370">
+                <img class="doing__pic"
+                 srcset="
+                ./images/doing/box2.jpg 1x,
+                ./images/doing/box2@2x.jpg 2x
+                "
+                 src="./images/doing/box2.jpg" alt="мобильные приложения" width="370">
                 <p class="doing__lable">Мобильные приложения</p>
             </li>
             <li class="doing__thumb">
-                <img class="doing__pic" src="./images/box3.jpg" alt="работа с графикой" width="370">
+                <img class="doing__pic" 
+                 srcset="
+                ./images/doing/box3.jpg 1x,
+                ./images/doing/box3@2x.jpg 2x
+                "
+                src="./images/doing/box3.jpg" alt="дизайнерские решения" width="370">
                 <p class="doing__lable">Дизайнерские решения</p>
             </li>
         </ul>
@@ -174,7 +190,17 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__list">
                 <li  class="team__card">
-                    <img class="team__photo" src="./images/demjanenko.jpg" alt="Игорь Демьяненко" width="270">
+                    <img class="team__photo"
+                    	srcset="
+						./images/team/demjanenko-desk.jpg 270w,
+						./images/team/demjanenko-tab.jpg  354w,
+						./images/team/demjanenko-mob.jpg  450w,
+						./images/team/demjanenko-desk@2x.jpg 540w,
+						./images/team/demjanenko-tab@2x.jpg  708w,
+						./images/team/demjanenko-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+					src="./images/teem/demjanenko-mob.jpg" alt="Игорь Демьяненко">
                     <div class="team__text">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p lang="en" class="team__position">Product Designer</p>
@@ -197,7 +223,17 @@
                     </div>
                 </li>
                 <li  class="team__card">
-                    <img class="team__photo" src="./images/repina.jpg" alt="Ольга Репина" width="270">
+                    <img class="team__photo" 
+                    	srcset="
+						./images/team/repina-desk.jpg 270w,
+						./images/team/repina-tab.jpg  354w,
+						./images/team/repina-mob.jpg  450w,
+						./images/team/repina-desk@2x.jpg 540w,
+						./images/team/repina-tab@2x.jpg  708w,
+						./images/team/repina-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/team/repina-mob.jpg" alt="Ольга Репина">
                     <div class="team__text">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p lang="en" class="team__position">Frontend Developer</p>
@@ -270,7 +306,7 @@
     </section>
     </main>
     <!-- Regular clients -->
-    <section class="section clients ">
+     <section class="section clients "> 
         <div class="container clients__container">
             <h2 class="section__title">Постоянные клиенты</h2>
             <ul class="clients__list">
@@ -318,7 +354,7 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer section -->
     <footer class="footer" >
