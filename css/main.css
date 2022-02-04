@@ -12,6 +12,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -64,7 +65,6 @@ body.modal-open {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 1px red;
   margin-left: auto;
   margin-right: auto;
 }
@@ -238,9 +238,13 @@ body.modal-open {
 }
 
 .header__email:hover .header__icon-email,
+.header__email:hover .header__icon-email--tab,
 .header__email:focus .header__icon-email,
+.header__email:focus .header__icon-email--tab,
 .header__tel:hover .header__icon-phone,
-.header__tel:focus .header__icon-phone {
+.header__tel:hover .header__icon-phone--tab,
+.header__tel:focus .header__icon-phone,
+.header__tel:focus .header__icon-phone--tab {
   fill: #2196f3;
 }
 
@@ -248,22 +252,52 @@ body.modal-open {
   display: flex;
 }
 
-.header__icon-phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
+.header .header__icon {
   fill: #757575;
   align-self: baseline;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__icon-email {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: #757575;
-  align-self: baseline;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .header .header__icon-email--tab {
+    display: block;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+  .header .header__icon-phone--tab {
+    display: block;
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  .header .header__icon-email {
+    display: none;
+  }
+  .header .header__icon-phone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .header__icon-email {
+    display: block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .header .header__icon-email--tab {
+    display: none;
+  }
+  .header .header__icon-phone {
+    display: block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .header .header__icon-phone--tab {
+    display: none;
+  }
 }
 
 .header__link--current {

@@ -104,9 +104,13 @@
     color: getColor(accent-color);
   }
   &__email:hover &__icon-email,
+  &__email:hover &__icon-email--tab,
   &__email:focus &__icon-email,
+  &__email:focus &__icon-email--tab,
   &__tel:hover &__icon-phone,
-  &__tel:focus &__icon-phone {
+  &__tel:hover &__icon-phone--tab,
+  &__tel:focus &__icon-phone,
+  &__tel:focus &__icon-phone--tab {
     fill: getColor(accent-color);
   }
   &__tel,
@@ -114,25 +118,59 @@
     display: flex;
   }
 
-  &__icon-phone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
+  // &__icon-phone {
+
+  // }
+  // &__icon-email {
+
+  // }
+  .header__icon {
     fill: getColor(primary-text-color);
     align-self: baseline;
-
     transition: $transitionColor;
   }
-  &__icon-email {
-    width: 16px;
-    height: 12px;
-
-    margin-right: 10px;
-    fill: getColor(primary-text-color);
-    align-self: baseline;
-
-    transition: $transitionColor;
+  @media screen and (min-width: 768px) {
+    .header__icon-email--tab {
+      display: block;
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
+    }
+    .header__icon-phone--tab {
+      display: block;
+      width: 10px;
+      height: 14px;
+      margin-right: 8px;
+    }
+    .header__icon-email {
+      display: none;
+    }
+    .header__icon-phone {
+      display: none;
+    }
   }
+
+  @media screen and (min-width: 1200px) {
+    .header__icon-email {
+      display: block;
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+    .header__icon-email--tab {
+      display: none;
+    }
+    .header__icon-phone {
+      display: block;
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
+    .header__icon-phone--tab {
+      display: none;
+    }
+  }
+
   &__link--current {
     position: relative;
     color: getColor(accent-color);

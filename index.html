@@ -72,16 +72,22 @@
         <ul class="header__contact">
             <li>
                 <a class="header__email" href="mailto:info@devstudio.com">
-                    <svg  class="header__icon-email">
-                        <use href="./images/icons.svg#envelope"></use>
+                    <svg  class="header__icon header__icon-email">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    <svg class="header__icon header__icon-email--tab">
+                         <use href="./images/icons.svg#icon-envelope-tab"></use>
                     </svg>
                     info@devstudio.com
                 </a>  
             </li>
             <li>
                 <a class="header__tel" href="tel:+380961111111">
-                <svg  class="header__icon-phone">
-                    <use href="./images/icons.svg#smartphone"></use>
+                <svg  class="header__icon header__icon-phone">
+                   <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                <svg class="header__icon header__icon-phone--tab">
+                    <use href="./images/icons.svg#icon-smartphone-tab"></use>
                 </svg>
                     +38 096 111 11 11
                 </a>
@@ -256,7 +262,17 @@
                     </div>
                 </li>
                 <li  class="team__card">
-                    <img class="team__photo" src="./images/tarasov.jpg" alt="Николай Тарасов" width="270">
+                    <img class="team__photo"
+                    srcset="
+						./images/team/tarasov-desk.jpg 270w,
+						./images/team/tarasov-tab.jpg  354w,
+						./images/team/tarasov-mob.jpg  450w,
+						./images/team/tarasov-desk@2x.jpg 540w,
+						./images/team/tarasov-tab@2x.jpg  708w,
+						./images/team/tarasov-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/team/tarasov-mob.jpg" alt="Николай Тарасов">
                     <div class="team__text">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p lang="en" class="team__position">Marketing</p>
@@ -279,7 +295,17 @@
                     </div>
                 </li>
                 <li class="team__card">
-                    <img class="team__photo" src="./images/iermakov.jpg" alt="Михаил Ермаков" width="270">
+                    <img class="team__photo"
+                     srcset="
+						./images/team/iermakov-desk.jpg 270w,
+						./images/team/iermakov-tab.jpg  354w,
+						./images/team/iermakov-mob.jpg  450w,
+						./images/team/iermakov-desk@2x.jpg 540w,
+						./images/team/iermakov-tab@2x.jpg  708w,
+						./images/team/iermakov-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/team/iermakov-mob.jpg " alt="Михаил Ермаков" >
                     <div class="team__text">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p lang="en" class="team__position">UI Designer</p>

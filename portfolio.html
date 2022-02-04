@@ -74,16 +74,22 @@
             <ul class="header__contact">
                 <li>
                     <a class="header__email" href="mailto:info@devstudio.com">
-                        <svg class="header__icon-email">
+                        <svg class="header__icon header__icon-email">
                             <use href="./images/icons.svg#envelope"></use>
+                        </svg>
+                        <svg class="header__icon header__icon-email--tab">
+                            <use href="./images/icons.svg#icon-envelope-tab"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
                 <li>
                     <a class="header__tel" href="tel:+380961111111">
-                        <svg class="header__icon-phone">
+                        <svg class="header__icon header__icon-phone">
                             <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        <svg class="header__icon header__icon-phone--tab">
+                            <use href="./images/icons.svg#icon-smartphone-tab"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
@@ -121,7 +127,17 @@
             <li class="projects__item">
                 <a class="projects__link" href="">
                     <div class="projects__thumb">
-                        <img src="./images/portfolio1.jpg" alt="веб-сайт технокряк" width="370">
+                        <img 
+                         srcset="
+						./images/portfolio/portfolio1-desk.jpg 270w,
+						./images/portfolio/portfolio1-tab.jpg  354w,
+						./images/portfolio/portfolio1-mob.jpg  450w,
+						./images/portfolio/portfolio1-desk@2x.jpg 540w,
+						./images/portfolio/portfolio1-tab@2x.jpg  708w,
+						./images/portfolio/portfolio1-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/portfolio/portfolio1-mob.jpg" alt="веб-сайт технокряк">
                         <div class="projects__thumb--overlay">
                             <p class="projects__text--overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
@@ -137,7 +153,17 @@
             <li class="projects__item">
                 <a class="projects__link" href="">
                     <div class="projects__thumb">
-                        <img src="./images/portfolio2.jpg" alt="дизайн постера" width="370">
+                        <img 
+                        srcset="
+						./images/portfolio/portfolio2-desk.jpg 270w,
+						./images/portfolio/portfolio2-tab.jpg  354w,
+						./images/portfolio/portfolio2-mob.jpg  450w,
+						./images/portfolio/portfolio2-desk@2x.jpg 540w,
+						./images/portfolio/portfolio2-tab@2x.jpg  708w,
+						./images/portfolio/portfolio2-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/portfolio/portfolio2-mob.jpg" alt="дизайн постера" >
                         <div class="projects__thumb--overlay">
                             <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
                         </div>
@@ -152,7 +178,17 @@
             <li class="projects__item">
                <a class="projects__link" href="">
                 <div class="projects__thumb">
-                    <img src="./images/portfolio3.jpg" alt="приложение ресторана" width="370">
+                    <img 
+                       srcset="
+					    ./images/portfolio/portfolio3-desk.jpg 270w,
+						./images/portfolio/portfolio3-tab.jpg  354w,
+						./images/portfolio/portfolio3-mob.jpg  450w,
+						./images/portfolio/portfolio3-desk@2x.jpg 540w,
+						./images/portfolio/portfolio3-tab@2x.jpg  708w,
+						./images/portfolio/portfolio3-mob@2x.jpg  900w
+					"
+					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/portfolio3-mob.jpg " alt="приложение ресторана">
                     <div class="projects__thumb--overlay">
                         <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                             reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
@@ -167,7 +203,17 @@
             <li class="projects__item">
                 <a class="projects__link" href="">
                     <div class="projects__thumb">
-                        <img src="./images/portfolio4.jpg" alt="проект прайм" width="370">
+                        <img
+                         srcset="
+					    ./images/portfolio/portfolio4-desk.jpg 270w,
+						./images/portfolio/portfolio4-tab.jpg  354w,
+						./images/portfolio/portfolio4-mob.jpg  450w,
+						./images/portfolio/portfolio4-desk@2x.jpg 540w,
+						./images/portfolio/portfolio4-tab@2x.jpg  708w,
+						./images/portfolio/portfolio4-mob@2x.jpg  900w
+					"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/portfolio/portfolio4-mob.jpg" alt="проект прайм">
                         <div class="projects__thumb--overlay">
                             <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                                 reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
@@ -182,7 +228,17 @@
             <li class="projects__item">
                 <a class="projects__link" href="">
                     <div class="projects__thumb">
-                        <img src="./images/portfolio5.jpg" alt="приложение проект боксес" width="370">
+                        <img 
+                         srcset="
+					    ./images/portfolio/portfolio5-desk.jpg 270w,
+						./images/portfolio/portfolio5-tab.jpg  354w,
+						./images/portfolio/portfolio5-mob.jpg  450w,
+						./images/portfolio/portfolio5-desk@2x.jpg 540w,
+						./images/portfolio/portfolio5-tab@2x.jpg  708w,
+						./images/portfolio/portfolio5-mob@2x.jpg  900w
+					"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/portfolio/portfolio5-mob.jpg" alt="приложение проект боксес">
                         <div class="projects__thumb--overlay">
                             <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                                 reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
@@ -198,7 +254,17 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__thumb">
-                    <img src="./images/portfolio6.jpg" alt="веб-сайт" width="370">
+                    <img 
+                     srcset="
+					    ./images/portfolio/portfolio6-desk.jpg 270w,
+						./images/portfolio/portfolio6-tab.jpg  354w,
+						./images/portfolio/portfolio6-mob.jpg  450w,
+						./images/portfolio/portfolio6-desk@2x.jpg 540w,
+						./images/portfolio/portfolio6-tab@2x.jpg  708w,
+						./images/portfolio/portfolio6-mob@2x.jpg  900w
+					"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/portfolio6-mob.jpg" alt="веб-сайт">
                     <div class="projects__thumb--overlay">
                         <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                             reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
@@ -213,7 +279,17 @@
             <li class="projects__item">
                <a class="projects__link" href="">
                 <div class="projects__thumb">
-                    <img src="./images/portfolio7.jpg" alt="дизайн издание" width="370">
+                    <img
+                     srcset="
+					    ./images/portfolio/portfolio7-desk.jpg 270w,
+						./images/portfolio/portfolio7-tab.jpg  354w,
+						./images/portfolio/portfolio7-mob.jpg  450w,
+						./images/portfolio/portfolio7-desk@2x.jpg 540w,
+						./images/portfolio/portfolio7-tab@2x.jpg  708w,
+						./images/portfolio/portfolio7-mob@2x.jpg  900w
+					"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/portfolio7-mob.jpg" alt="дизайн издание" >
                     <div class="projects__thumb--overlay">
                         <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                             reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
@@ -228,7 +304,17 @@
             <li class="projects__item">
                 <a class="projects__link" href="">
                     <div class="projects__thumb">
-                        <img src="./images/portfolio8.jpg" alt="маркетинг проект лаб" width="370">
+                        <img 
+                         srcset="
+					    ./images/portfolio/portfolio8-desk.jpg 270w,
+						./images/portfolio/portfolio8-tab.jpg  354w,
+						./images/portfolio/portfolio8-mob.jpg  450w,
+						./images/portfolio/portfolio8-desk@2x.jpg 540w,
+						./images/portfolio/portfolio8-tab@2x.jpg  708w,
+						./images/portfolio/portfolio8-mob@2x.jpg  900w
+					"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/portfolio/portfolio8-mob.jpg" alt="маркетинг проект лаб">
                         <div class="projects__thumb--overlay">
                             <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                                 reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
@@ -243,7 +329,17 @@
             <li class="projects__item">
                 <a class="projects__link" href="">
                     <div class="projects__thumb">
-                        <img src="./images/portfolio9.jpg" alt="приложение" width="370">
+                        <img 
+                         srcset="
+					    ./images/portfolio/portfolio9-desk.jpg 270w,
+						./images/portfolio/portfolio9-tab.jpg  354w,
+						./images/portfolio/portfolio9-mob.jpg  450w,
+						./images/portfolio/portfolio9-desk@2x.jpg 540w,
+						./images/portfolio/portfolio9-tab@2x.jpg  708w,
+						./images/portfolio/portfolio9-mob@2x.jpg  900w
+					"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/portfolio/portfolio9-mob.jpg" alt="приложение">
                         <div class="projects__thumb--overlay">
                             <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
                                 reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
