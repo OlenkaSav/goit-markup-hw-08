@@ -617,6 +617,10 @@ body.modal-open {
   }
 }
 
+.doing__section {
+  padding-top: 0;
+}
+
 .doing__list {
   display: flex;
   justify-content: space-between;
@@ -980,15 +984,15 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__email {
-    width: 358px;
-  }
-}
-
 @media screen and (min-width: 479px) {
   .footer__email {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__email {
+    width: 358px;
   }
 }
 

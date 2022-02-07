@@ -804,15 +804,15 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__email {
-    width: 358px;
-  }
-}
-
 @media screen and (min-width: 479px) {
   .footer__email {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__email {
+    width: 358px;
   }
 }
 
