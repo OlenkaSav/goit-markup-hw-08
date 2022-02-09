@@ -1,9 +1,8 @@
 .doing {
+  padding-top: 0;
+
   @media screen and (max-width: 1199px) {
     display: none;
-  }
-  &__section {
-    padding-top: 0;
   }
   &__list {
     display: flex;
