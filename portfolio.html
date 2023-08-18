@@ -1,424 +1,556 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
     <!-- Header section -->
     <header class="header">
-        <div class="container header__container">
-            <nav class="header__main-nav">
-                <a class="logo header__logo" href="index.html">Web<span class="header__logo--style">Studio</span></a>
-                <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="menu-toggle__icon" width=40px height=40px aria-label="Переключатель мобильного меню">
-                        <use href="images/icons.svg#icon-menu"></use>
-                    </svg>
-                </button>
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu" type="button" aria-expanded="false"
-                        aria-controls="mobile-menu">
-                        <svg class="menu-toggle__icon" width=40px height=40px aria-label="Переключатель мобильного меню">
-                            <use href="images/icons.svg#icon-menu-close"></use>
-                        </svg>
-                    </button>
-                    <div class="menu-container--position">
-                        <ul class="menu-container__page-nav">
-                            <li class="menu-container__item">
-                                <a class="menu-container__link" href="./index.html">Студия</a>
-                            </li>
-                            <li class="menu-container__item">
-                                <a class="menu-container__link menu-container__link--current" href="./portfolio.html">Портфолио</a>
-                            </li>
-                            <li class="menu-container__item">
-                                <a class="menu-container__link" href="">Контакты</a>
-                            </li>
-                        </ul>
-                        <ul class="menu-container__contacts">
-                            <li class="menu-container__contact">
-                                <a class="menu-container__tel" href="tel:+380961111111">
-                                    +38 096 111 11 11
-                                </a>
-                            </li>
-                            <li class="menu-container__contact">
-                                <a class="menu-container__email" href="mailto:info@devstudio.com">
-                                    info@devstudio.com
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="menu-container__social social">
-                            <li class="social__item"><a class="social__link" href="">Instagram</a></li>
-                            <li class="social__item"><a class="social__link" href="">Twitter</a></li>
-                            <li class="social__item"><a class="social__link" href="">Facebook</a></li>
-                            <li class="social__item"><a class="social__link" href="">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="header__page-nav">
-                    <li class="header__item">
-                        <a class="header__link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link header__link--current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <ul class="header__contact">
-                <li>
-                    <a class="header__email" href="mailto:info@devstudio.com">
-                        <svg class="header__icon header__icon-email">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        <svg class="header__icon header__icon-email--tab">
-                            <use href="./images/icons.svg#icon-envelope-tab"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
+      <div class="container header__container">
+        <nav class="header__main-nav">
+          <a class="logo header__logo" href="index.html"
+            >Web<span class="header__logo--style">Studio</span></a
+          >
+          <button
+            class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-toggle__icon"
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button
+              class="menu-toggle js-close-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="menu-toggle__icon"
+                width="40px"
+                height="40px"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use href="images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <div class="menu-container--position">
+              <ul class="menu-container__page-nav">
+                <li class="menu-container__item">
+                  <a class="menu-container__link" href="./index.html">Студия</a>
                 </li>
-                <li>
-                    <a class="header__tel" href="tel:+380961111111">
-                        <svg class="header__icon header__icon-phone">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        <svg class="header__icon header__icon-phone--tab">
-                            <use href="./images/icons.svg#icon-smartphone-tab"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
+                <li class="menu-container__item">
+                  <a
+                    class="menu-container__link menu-container__link--current"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
                 </li>
-            </ul>
-        </div>
-    
-    
-    </header>
+                <li class="menu-container__item">
+                  <a class="menu-container__link" href="">Контакты</a>
+                </li>
+              </ul>
+              <ul class="menu-container__contacts">
+                <li class="menu-container__contact">
+                  <a class="menu-container__tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="menu-container__contact">
+                  <a
+                    class="menu-container__email"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu-container__social social">
+                <li class="social__item">
+                  <a class="social__link" href="">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">Twitter</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">Facebook</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="header__page-nav">
+            <li class="header__item">
+              <a class="header__link" href="./index.html">Студия</a>
+            </li>
+            <li class="header__item">
+              <a
+                class="header__link header__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
+        <ul class="header__contact">
+          <li>
+            <a class="header__email" href="mailto:info@devstudio.com">
+              <svg class="header__icon header__icon-email">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              <svg class="header__icon header__icon-email--tab">
+                <use href="./images/icons.svg#icon-envelope-tab"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header__tel" href="tel:+380961111111">
+              <svg class="header__icon header__icon-phone">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              <svg class="header__icon header__icon-phone--tab">
+                <use href="./images/icons.svg#icon-smartphone-tab"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <!-- Main content section -->
     <main>
-        <section class="section">
-        <h1 class="section__title visually-hidden"> Наши проекты</h1>  
+      <section class="section">
+        <h1 class="section__title visually-hidden">Наши проекты</h1>
         <ul class="filter container">
-            <li class="filter__item">
-                <button type="button" class="filter__button"> Все </button>
-            </li>
-            <li class="filter__item">
-                <button type="button" class="filter__button"> Веб-сайты </button>
-            </li>
-            <li class="filter__item"> 
-                <button type="button" class="filter__button"> Приложения </button>
-            </li>
-            <li class="filter__item">
-                 <button type="button" class="filter__button"> Дизайн </button>
-            </li>
-            <li class="filter__item">
-                 <button type="button" class="filter__button"> Маркетинг </button>
-            </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button">Все</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button">Веб-сайты</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button">Приложения</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button">Дизайн</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button">Маркетинг</button>
+          </li>
         </ul>
 
         <ul class="projects container">
-            <li class="projects__item">
-                <a class="projects__link" href="">
-                    <div class="projects__thumb">
-                        <img 
-                         srcset="
-						./images/portfolio/portfolio1-desk.jpg 270w,
-						./images/portfolio/portfolio1-tab.jpg  354w,
-						./images/portfolio/portfolio1-mob.jpg  450w,
-						./images/portfolio/portfolio1-desk@2x.jpg 540w,
-						./images/portfolio/portfolio1-tab@2x.jpg  708w,
-						./images/portfolio/portfolio1-mob@2x.jpg  900w
-					"
-					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/portfolio/portfolio1-mob.jpg" alt="веб-сайт технокряк">
-                        <div class="projects__thumb--overlay">
-                            <p class="projects__text--overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-                                платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.</p>
-                        </div>
-                    </div>
-                    <div class="projects__card">
-                        <h2 class="projects__title">Технокряк</h2>
-                        <p class="projects__text">Веб-сайт</p>
-                    </div>
-                </a>
-            </li>
-            <li class="projects__item">
-                <a class="projects__link" href="">
-                    <div class="projects__thumb">
-                        <img 
-                        srcset="
-						./images/portfolio/portfolio2-desk.jpg 270w,
-						./images/portfolio/portfolio2-tab.jpg  354w,
-						./images/portfolio/portfolio2-mob.jpg  450w,
-						./images/portfolio/portfolio2-desk@2x.jpg 540w,
-						./images/portfolio/portfolio2-tab@2x.jpg  708w,
-						./images/portfolio/portfolio2-mob@2x.jpg  900w
-					"
-					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/portfolio/portfolio2-mob.jpg" alt="дизайн постера" >
-                        <div class="projects__thumb--overlay">
-                            <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                        </div>
-                    </div>
-                    <div class="projects__card">
-                        <h2 class="projects__title">Постер <span lang="en"> Orlean vs Golden Star </span></h2>
-                        <p class="projects__text">Дизайн</p>
-                    </div>
-                
-                </a>
-            </li>
-            <li class="projects__item">
-               <a class="projects__link" href="">
-                <div class="projects__thumb">
-                    <img 
-                       srcset="
-					    ./images/portfolio/portfolio3-desk.jpg 270w,
-						./images/portfolio/portfolio3-tab.jpg  354w,
-						./images/portfolio/portfolio3-mob.jpg  450w,
-						./images/portfolio/portfolio3-desk@2x.jpg 540w,
-						./images/portfolio/portfolio3-tab@2x.jpg  708w,
-						./images/portfolio/portfolio3-mob@2x.jpg  900w
-					"
-					sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                    src="./images/portfolio/portfolio3-mob.jpg " alt="приложение ресторана">
-                    <div class="projects__thumb--overlay">
-                        <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                            reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                    </div>
-                </div>          
-                   <div class="projects__card">
-                        <h2 class="projects__title">Ресторан <span lang="en">Seafood</span></h2>
-                        <p class="projects__text">Приложение</p>
-                   </div>
-               </a>
-            </li>
-            <li class="projects__item">
-                <a class="projects__link" href="">
-                    <div class="projects__thumb">
-                        <img
-                         srcset="
-					    ./images/portfolio/portfolio4-desk.jpg 270w,
-						./images/portfolio/portfolio4-tab.jpg  354w,
-						./images/portfolio/portfolio4-mob.jpg  450w,
-						./images/portfolio/portfolio4-desk@2x.jpg 540w,
-						./images/portfolio/portfolio4-tab@2x.jpg  708w,
-						./images/portfolio/portfolio4-mob@2x.jpg  900w
-					"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/portfolio/portfolio4-mob.jpg" alt="проект прайм">
-                        <div class="projects__thumb--overlay">
-                            <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                                reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                        </div>
-                    </div>
-                        <div class="projects__card">
-                            <h2 class="projects__title">Проект <span lang="en">Prime</span></h2>
-                            <p class="projects__text">Маркетинг</p>
-                        </div>
-                </a>
-            </li>
-            <li class="projects__item">
-                <a class="projects__link" href="">
-                    <div class="projects__thumb">
-                        <img 
-                         srcset="
-					    ./images/portfolio/portfolio5-desk.jpg 270w,
-						./images/portfolio/portfolio5-tab.jpg  354w,
-						./images/portfolio/portfolio5-mob.jpg  450w,
-						./images/portfolio/portfolio5-desk@2x.jpg 540w,
-						./images/portfolio/portfolio5-tab@2x.jpg  708w,
-						./images/portfolio/portfolio5-mob@2x.jpg  900w
-					"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/portfolio/portfolio5-mob.jpg" alt="приложение проект боксес">
-                        <div class="projects__thumb--overlay">
-                            <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                                reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                        </div>
-                    </div>
-                        <div class="projects__card">
-                            <h2 class="projects__title">Проект <span lang="en">Boxes</span> </h2>
-                            <p class="projects__text">Приложение</p>
-                        </div>
-                    
-                </a>
-            </li>
-            <li class="projects__item">
-              <a class="projects__link" href="">
-                <div class="projects__thumb">
-                    <img 
-                     srcset="
-					    ./images/portfolio/portfolio6-desk.jpg 270w,
-						./images/portfolio/portfolio6-tab.jpg  354w,
-						./images/portfolio/portfolio6-mob.jpg  450w,
-						./images/portfolio/portfolio6-desk@2x.jpg 540w,
-						./images/portfolio/portfolio6-tab@2x.jpg  708w,
-						./images/portfolio/portfolio6-mob@2x.jpg  900w
-					"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                    src="./images/portfolio/portfolio6-mob.jpg" alt="веб-сайт">
-                    <div class="projects__thumb--overlay">
-                        <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                            reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                    </div>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio1-desk.jpg    270w,
+                    ./images/portfolio/portfolio1-tab.jpg     354w,
+                    ./images/portfolio/portfolio1-mob.jpg     450w,
+                    ./images/portfolio/portfolio1-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio1-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio1-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio1-mob.jpg"
+                  alt="веб-сайт технокряк"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
                 </div>
-                    <div class="projects__card">
-                        <h2 class="projects__title" lang="en">Inspiration has no Borders</h2>
-                        <p class="projects__text"> Веб-сайт<p>                  
-                    </div>
-              </a>
-            </li>
-            <li class="projects__item">
-               <a class="projects__link" href="">
-                <div class="projects__thumb">
-                    <img
-                     srcset="
-					    ./images/portfolio/portfolio7-desk.jpg 270w,
-						./images/portfolio/portfolio7-tab.jpg  354w,
-						./images/portfolio/portfolio7-mob.jpg  450w,
-						./images/portfolio/portfolio7-desk@2x.jpg 540w,
-						./images/portfolio/portfolio7-tab@2x.jpg  708w,
-						./images/portfolio/portfolio7-mob@2x.jpg  900w
-					"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                    src="./images/portfolio/portfolio7-mob.jpg" alt="дизайн издание" >
-                    <div class="projects__thumb--overlay">
-                        <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                            reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                    </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">Технокряк</h2>
+                <p class="projects__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio2-desk.jpg    270w,
+                    ./images/portfolio/portfolio2-tab.jpg     354w,
+                    ./images/portfolio/portfolio2-mob.jpg     450w,
+                    ./images/portfolio/portfolio2-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio2-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio2-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio2-mob.jpg"
+                  alt="дизайн постера"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
                 </div>
-                    <div class="projects__card">
-                        <h2 class="projects__title">Издание <span lang="en">Limited Edition</span></h2>
-                        <p class="projects__text">Дизайн</p>
-                    </div>
-               </a>
-            </li>
-            <li class="projects__item">
-                <a class="projects__link" href="">
-                    <div class="projects__thumb">
-                        <img 
-                         srcset="
-					    ./images/portfolio/portfolio8-desk.jpg 270w,
-						./images/portfolio/portfolio8-tab.jpg  354w,
-						./images/portfolio/portfolio8-mob.jpg  450w,
-						./images/portfolio/portfolio8-desk@2x.jpg 540w,
-						./images/portfolio/portfolio8-tab@2x.jpg  708w,
-						./images/portfolio/portfolio8-mob@2x.jpg  900w
-					"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/portfolio/portfolio8-mob.jpg" alt="маркетинг проект лаб">
-                        <div class="projects__thumb--overlay">
-                            <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                                reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                        </div>
-                    </div>
-                        <div class="projects__card">
-                            <h2 class="projects__title">Проект <span lang="en">LAB</span></h2>
-                            <p class="projects__text">Маркетинг</p>
-                        </div>
-                </a>
-            </li>
-            <li class="projects__item">
-                <a class="projects__link" href="">
-                    <div class="projects__thumb">
-                        <img 
-                         srcset="
-					    ./images/portfolio/portfolio9-desk.jpg 270w,
-						./images/portfolio/portfolio9-tab.jpg  354w,
-						./images/portfolio/portfolio9-mob.jpg  450w,
-						./images/portfolio/portfolio9-desk@2x.jpg 540w,
-						./images/portfolio/portfolio9-tab@2x.jpg  708w,
-						./images/portfolio/portfolio9-mob@2x.jpg  900w
-					"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/portfolio/portfolio9-mob.jpg" alt="приложение">
-                        <div class="projects__thumb--overlay">
-                            <p class="projects__text--overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus magni dolor
-                                reiciendis impedit minima laborum quidem iusto, minus necessitatibus!</p>
-                        </div>
-                    </div>
-                        <div class="projects__card">
-                            <h2 class="projects__title" lang="en">Growing Business</h2>
-                            <p class="projects__text">Приложение</p>
-                        </div>
-                </a>
-            </li>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">
+                  Постер <span lang="en"> Orlean vs Golden Star </span>
+                </h2>
+                <p class="projects__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio3-desk.jpg    270w,
+                    ./images/portfolio/portfolio3-tab.jpg     354w,
+                    ./images/portfolio/portfolio3-mob.jpg     450w,
+                    ./images/portfolio/portfolio3-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio3-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio3-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio3-mob.jpg "
+                  alt="приложение ресторана"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="projects__text">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio4-desk.jpg    270w,
+                    ./images/portfolio/portfolio4-tab.jpg     354w,
+                    ./images/portfolio/portfolio4-mob.jpg     450w,
+                    ./images/portfolio/portfolio4-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio4-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio4-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio4-mob.jpg"
+                  alt="проект прайм"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="projects__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio5-desk.jpg    270w,
+                    ./images/portfolio/portfolio5-tab.jpg     354w,
+                    ./images/portfolio/portfolio5-mob.jpg     450w,
+                    ./images/portfolio/portfolio5-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio5-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio5-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio5-mob.jpg"
+                  alt="приложение проект боксес"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
+                <p class="projects__text">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio6-desk.jpg    270w,
+                    ./images/portfolio/portfolio6-tab.jpg     354w,
+                    ./images/portfolio/portfolio6-mob.jpg     450w,
+                    ./images/portfolio/portfolio6-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio6-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio6-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio6-mob.jpg"
+                  alt="веб-сайт"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="projects__text">Веб-сайт</p>
+                <p></p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio7-desk.jpg    270w,
+                    ./images/portfolio/portfolio7-tab.jpg     354w,
+                    ./images/portfolio/portfolio7-mob.jpg     450w,
+                    ./images/portfolio/portfolio7-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio7-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio7-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio7-mob.jpg"
+                  alt="дизайн издание"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="projects__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio8-desk.jpg    270w,
+                    ./images/portfolio/portfolio8-tab.jpg     354w,
+                    ./images/portfolio/portfolio8-mob.jpg     450w,
+                    ./images/portfolio/portfolio8-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio8-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio8-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio8-mob.jpg"
+                  alt="маркетинг проект лаб"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title">
+                  Проект <span lang="en">LAB</span>
+                </h2>
+                <p class="projects__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="">
+              <div class="projects__thumb">
+                <img
+                  srcset="
+                    ./images/portfolio/portfolio9-desk.jpg    270w,
+                    ./images/portfolio/portfolio9-tab.jpg     354w,
+                    ./images/portfolio/portfolio9-mob.jpg     450w,
+                    ./images/portfolio/portfolio9-desk@2x.jpg 540w,
+                    ./images/portfolio/portfolio9-tab@2x.jpg  708w,
+                    ./images/portfolio/portfolio9-mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/portfolio9-mob.jpg"
+                  alt="приложение"
+                />
+                <div class="projects__thumb--overlay">
+                  <p class="projects__text--overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam accusamus magni dolor reiciendis impedit minima
+                    laborum quidem iusto, minus necessitatibus!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__card">
+                <h2 class="projects__title" lang="en">Growing Business</h2>
+                <p class="projects__text">Приложение</p>
+              </div>
+            </a>
+          </li>
         </ul>
-        </section>
-
+      </section>
     </main>
 
     <!-- Footer section -->
     <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__tablet-pos">
-                <div>
-                    <a class="logo footer__logo" href="index.html">Web<span class="footer__logo--style">Studio</span></a>
-    
-                    <address class="footer__addresses">
-                        <ul class="footer__contacts">
-                            <li>
-                                <a href="https://goo.gl/maps/Qix8SAgsikwh32vZ7" class="footer__address" target="_blank"
-                                    rel="noreferrer noopener">
-                                    г. Киев, пр-т Леси Украинки, 26</a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@example.com"
-                                    class="footer__address footer__address--email">info@example.com</a>
-                            </li>
-                            <li>
-                                <a href="tel:+380991111111" class="footer__address footer__address--tel">+38 099 111 11
-                                    11</a>
-                            </li>
-                        </ul>
-                    </address>
-    
-                </div>
-                <div class="footer__join">
-                    <strong class="footer__title">Присоединяйтесь</strong>
-                    <ul class="footer__links">
-                        <li><a class="footer__link" href="">
-                                <svg class="footer__icon" width=44px height=44px>
-                                    <use href="./images/icons.svg#instagram"></use>
-                                </svg>
-                            </a></li>
-                        <li><a class="footer__link" href=""><svg class="footer__icon" width=20px height=20px>
-                                    <use href="./images/icons.svg#twitter"></use>
-                                </svg></a></li>
-                        <li><a class="footer__link" href=""><svg class="footer__icon" width=20px height=20px>
-                                    <use href="./images/icons.svg#facebook"></use>
-                                </svg></a></li>
-                        <li><a class="footer__link" href=""><svg class="footer__icon" width=20px height=20px>
-                                    <use href="./images/icons.svg#linkedin"></use>
-                                </svg></a></li>
-                    </ul>
-                </div>
-            </div>
-            <form class="footer__input">
-                <b class="footer__title">Подпишитесь на рассылку</b>
-                <div class="footer__input-field">
-                    <input class="footer__email" type="email" name="email" placeholder="E-mail">
-                    <button class="button footer__button" type="submit"> Подписаться <svg class="footer__subscribe"
-                            width=24px height=24px>
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg></button>
-                </div>
-            </form>
+      <div class="container footer__container">
+        <div class="footer__tablet-pos">
+          <div>
+            <a class="logo footer__logo" href="index.html"
+              >Web<span class="footer__logo--style">Studio</span></a
+            >
+
+            <address class="footer__addresses">
+              <ul class="footer__contacts">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/Qix8SAgsikwh32vZ7"
+                    class="footer__address"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer__address footer__address--email"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:+380991111111"
+                    class="footer__address footer__address--tel"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__join">
+            <strong class="footer__title">Присоединяйтесь</strong>
+            <ul class="footer__links">
+              <li>
+                <a class="footer__link" href="">
+                  <svg class="footer__icon" width="44px" height="44px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__link" href=""
+                  ><svg class="footer__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="footer__link" href=""
+                  ><svg class="footer__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="footer__link" href=""
+                  ><svg class="footer__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <form class="footer__input">
+          <b class="footer__title">Подпишитесь на рассылку</b>
+          <div class="footer__input-field">
+            <input
+              class="footer__email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="button footer__button" type="submit">
+              Подписаться
+              <svg class="footer__subscribe" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </footer>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/mobile-menu.js"></script>
-</body>
+  </body>
 </html>

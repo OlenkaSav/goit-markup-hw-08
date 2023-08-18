@@ -28,7 +28,6 @@
   font-weight: 500;
   z-index: 10;
   overflow: auto;
-  // transform: translateX(100%);
   transition: $transitionOpasity;
   pointer-events: none;
 
@@ -66,7 +65,6 @@
   color: getColor(accent-color);
 }
 .menu-container__page-nav {
-  // margin-top: 232px;
   flex-grow: 1;
   flex-shrink: 1;
 }
